@@ -164,7 +164,8 @@ public class Breakout extends GraphicsProgram {
 			paddle.move(e.getX(), HEIGHT - PADDLE_Y_OFFSET);
 			//drawPaddle(e.getX(), HEIGHT - PADDLE_Y_OFFSET);
 		} else 
-			drawPaddle(WIDTH- PADDLE_WIDTH - BRICK_SEP, HEIGHT - PADDLE_Y_OFFSET);
+			//drawPaddle(WIDTH- PADDLE_WIDTH - BRICK_SEP, HEIGHT - PADDLE_Y_OFFSET);
+			paddle.move(e.getX(), HEIGHT - PADDLE_Y_OFFSET)
 	}
 	
 	private void drawBall() {
