@@ -113,9 +113,9 @@ public class Breakout extends GraphicsProgram {
 	
 	private void drawBrick (double x, double y, Color color) {
 		brick = new GRect (x, y, BRICK_WIDTH, BRICK_HEIGHT);
-		brick.setFilled(true);
-		brick.setFillColor(color);
-		brick.setColor(color);
+		brick.setFilled(true);		// enable fill color
+		brick.setFillColor(color);  // fill brick with color
+		brick.setColor(color);		// set the boundary color
 		add(brick);
 	}
 
