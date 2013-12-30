@@ -66,6 +66,11 @@ public class Breakout extends GraphicsProgram {
 	public void run() {
 		// draw the game initial setup
 		drawGameBricks();
+		
+		// draw the paddle
+		drawPaddle();
+		
+		// add listner for mouse movement
 	}
 	
 	private void drawGameBricks() {
