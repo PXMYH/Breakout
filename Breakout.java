@@ -175,4 +175,8 @@ public class Breakout extends GraphicsProgram {
 		ball.setFillColor(Color.black);
 		add(ball);
 	}
+	
+	moveBall() { 
+		
+	}
 }
