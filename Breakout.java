@@ -161,7 +161,8 @@ public class Breakout extends GraphicsProgram {
 		
 		// draw paddle
 		if (e.getX() < WIDTH - PADDLE_WIDTH) {
-			drawPaddle(e.getX(), HEIGHT - PADDLE_Y_OFFSET);
+			paddle.move(e.getX(), HEIGHT - PADDLE_Y_OFFSET)
+			//drawPaddle(e.getX(), HEIGHT - PADDLE_Y_OFFSET);
 		} else 
 			drawPaddle(WIDTH- PADDLE_WIDTH - BRICK_SEP, HEIGHT - PADDLE_Y_OFFSET);
 	}
