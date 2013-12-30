@@ -81,7 +81,7 @@ public class Breakout extends GraphicsProgram {
 			
 			for (int index_column = 0; index_column < NBRICKS_PER_ROW; index_column ++) {
 				// Extrapolate x location of brick
-				brick_x = brick_x_init + index * (BRICK_WIDTH + BRICK_SEP);
+				brick_x = brick_x_init + index_column * (BRICK_WIDTH + BRICK_SEP);
 				
 				// draw the bricks
 				switch (index) {
