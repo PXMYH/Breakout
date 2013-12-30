@@ -75,6 +75,7 @@ public class Breakout extends GraphicsProgram {
 		// calculate the location of the first brick in each row
 		double brick_x_init = calcFirstBrickLoc();
 		
+		for (row_index = 0; row_index < NBRICKS_PER_ROW; row_index ++) {
 		for (int index = 0; index < NBRICKS_PER_ROW; index ++) {
 			// Extrapolate x location of brick
 			brick_x = brick_x_init + index * (BRICK_WIDTH + BRICK_SEP);
@@ -98,6 +99,7 @@ public class Breakout extends GraphicsProgram {
 			}
 			drawBrick(brick_x, brick_y, brick_color);
 		}
+	}
 	}
 	
 	private double calcFirstBrickLoc () {
