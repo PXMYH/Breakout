@@ -190,7 +190,7 @@ public class Breakout extends GraphicsProgram {
 		
 		// move ball
 		ball.move(Vx, Vy);
-		drawBall();
+		
 		
 		// bouncing wall
 		
