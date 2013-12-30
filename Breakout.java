@@ -186,6 +186,9 @@ public class Breakout extends GraphicsProgram {
 		// initialize Vy
 		Vy = 3.0;
 		
+		// move ball
+		ball.move(Vx, Vy);
+		
 		// bouncing wall
 		
 	}
