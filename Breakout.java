@@ -86,7 +86,7 @@ public class Breakout extends GraphicsProgram {
 			switch (index) {
 			case 0: brick_color = Color.red;
 			}
-			drawBrick(brick_x, brick_y, );
+			drawBrick(brick_x, brick_y, brick_color);
 		}
 	}
 	
