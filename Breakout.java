@@ -124,4 +124,8 @@ public class Breakout extends GraphicsProgram {
 		add(brick);
 	}
 
+	private void drawPaddle() {
+		
+	}
+	
 }
