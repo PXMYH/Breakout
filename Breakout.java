@@ -137,5 +137,7 @@ public class Breakout extends GraphicsProgram {
 		paddle.setFillColor(Color.black);
 		add (paddle);
 	}
+
+	
 	
 }
