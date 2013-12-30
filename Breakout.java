@@ -78,7 +78,7 @@ public class Breakout extends GraphicsProgram {
 		}
 	}
 	
-	private int calcFirstBrickLoc () {
+	private double calcFirstBrickLoc () {
 		double loc_x;
 		loc_x = WIDTH - BRICK_WIDTH * NBRICKS_PER_ROW - 
 		return loc_x;
