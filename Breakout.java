@@ -81,6 +81,7 @@ public class Breakout extends GraphicsProgram {
 		drawBall();
 	}
 	
+	// draw the game setup bricks
 	private void drawGameBricks() {
 		
 		double brick_x, brick_y;
@@ -118,12 +119,14 @@ public class Breakout extends GraphicsProgram {
 		}
 	}
 	
+	// calculate the location of the first brick
 	private double calcFirstBrickLoc () {
 		double loc_x;
 		loc_x = (WIDTH - BRICK_WIDTH * NBRICKS_PER_ROW - BRICK_SEP * (NBRICKS_PER_ROW -1)) / 2;
 		return loc_x;
 	}
 	
+	// draw an individual brick
 	private void drawBrick (double x, double y, Color color) {
 		brick = new GRect (x, y, BRICK_WIDTH, BRICK_HEIGHT);
 		brick.setFilled(true);		// enable fill color
@@ -132,6 +135,7 @@ public class Breakout extends GraphicsProgram {
 		add(brick);
 	}
 
+	// draw an individual paddle
 	private void drawPaddle(double x, double y) {
 		// draw the paddle
 		paddle = new GRect (x, y, PADDLE_WIDTH, PADDLE_HEIGHT);
@@ -151,5 +155,5 @@ public class Breakout extends GraphicsProgram {
 			drawPaddle(WIDTH- PADDLE_WIDTH - BRICK_SEP, HEIGHT - PADDLE_Y_OFFSET);
 	}
 	
-	
+	private void 
 }
