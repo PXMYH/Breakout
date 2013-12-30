@@ -65,6 +65,9 @@ public class Breakout extends GraphicsProgram {
 		drawGameBricks();
 		
 		// draw the paddle
+		// locate the initial location of paddle
+		double paddle_x = (WIDTH - PADDLE_WIDTH)/ 2;
+		double paddle_y = HEIGHT - PADDLE_Y_OFFSET;		
 		drawPaddle();
 		
 		// add listener for mouse movement
@@ -123,9 +126,7 @@ public class Breakout extends GraphicsProgram {
 	}
 
 	private void drawPaddle() {
-		// locate the initial location of paddle
-		double paddle_x = (WIDTH - PADDLE_WIDTH)/ 2;
-		double paddle_y = HEIGHT - PADDLE_Y_OFFSET;
+
 		
 		// draw the paddle
 		paddle = new GRect (paddle_x, paddle_y, PADDLE_WIDTH, PADDLE_HEIGHT);
@@ -135,7 +136,7 @@ public class Breakout extends GraphicsProgram {
 	}
 
 	private void mouseMoved() {
-		
+		// 
 	}
 	
 	
