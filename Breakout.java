@@ -58,7 +58,8 @@ public class Breakout extends GraphicsProgram {
 	private GRect brick;
 	private GRect paddle;
 
-
+	/* Method: init() */
+	/* Initialize the program */
 	public void init() {
 		// draw the game initial setup
 		drawGameBricks();
