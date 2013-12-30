@@ -60,6 +60,7 @@ public class Breakout extends GraphicsProgram {
 	private static final int NTURNS = 3;
 	
 	private GRect brick;
+	private GRect paddle;
 
 /* Method: run() */
 /** Runs the Breakout program. */
@@ -126,7 +127,10 @@ public class Breakout extends GraphicsProgram {
 	}
 
 	private void drawPaddle() {
+		// locate the initial location of paddle
 		
+		// draw the paddle
+		paddle = new GRect ();
 	}
 	
 }
