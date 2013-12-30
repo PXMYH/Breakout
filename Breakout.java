@@ -79,24 +79,28 @@ public class Breakout extends GraphicsProgram {
 			// Extrapolate y location of brick
 			brick_y = BRICK_Y_OFFSET + row_index * (BRICK_HEIGHT + BRICK_SEP);
 			
+			// determine the color of bricks in a row
+			switch (index) {
+			case 0: brick_color = Color.red;break;
+			case 1: brick_color = Color.red;break;
+			case 2: brick_color = Color.orange;break;
+			case 3: brick_color = Color.orange;break;
+			case 4: brick_color = Color.yellow;break;
+			case 5: brick_color = Color.yellow;break;
+			case 6: brick_color = Color.green;break;
+			case 7: brick_color = Color.green;break;
+			case 8: brick_color = Color.cyan;break;
+			case 9: brick_color = Color.cyan;break;
+			default: brick_color = Color.white;
+			}
+			
+			
 			for (int index_column = 0; index_column < NBRICKS_PER_ROW; index_column ++) {
 				// Extrapolate x location of brick
 				brick_x = brick_x_init + index_column * (BRICK_WIDTH + BRICK_SEP);
 				
 				// draw the bricks
-				switch (index) {
-				case 0: brick_color = Color.red;break;
-				case 1: brick_color = Color.red;break;
-				case 2: brick_color = Color.orange;break;
-				case 3: brick_color = Color.orange;break;
-				case 4: brick_color = Color.yellow;break;
-				case 5: brick_color = Color.yellow;break;
-				case 6: brick_color = Color.green;break;
-				case 7: brick_color = Color.green;break;
-				case 8: brick_color = Color.cyan;break;
-				case 9: brick_color = Color.cyan;break;
-				default: brick_color = Color.white;
-				}
+
 				drawBrick(brick_x, brick_y, brick_color);
 			}
 		}
