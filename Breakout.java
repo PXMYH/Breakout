@@ -79,5 +79,9 @@ public class Breakout extends GraphicsProgram {
 	private int calcFirstBrickLoc () {
 		
 	}
+	
+	private void drawBricks () {
+		
+	}
 
 }
