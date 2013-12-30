@@ -133,7 +133,7 @@ public class Breakout extends GraphicsProgram {
 		add (paddle);
 	}
 
-	private void mouseMoved(MouseEvent e) {
+	public void mouseMoved(MouseEvent e) {
 		// draw paddle
 		drawPaddle(e.getX(), );
 	}
