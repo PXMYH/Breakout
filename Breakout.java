@@ -61,7 +61,7 @@ public class Breakout extends GraphicsProgram {
 	
 	private static final int GAME_DELAY = 50;
 
-	private double vx, vy;
+	private double Vx, Vy;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	
 	/* Method: init() */
@@ -176,7 +176,9 @@ public class Breakout extends GraphicsProgram {
 		add(ball);
 	}
 	
-	moveBall() { 
+	private void moveBall() { 
+		
+		// initialize Vx
 		
 	}
 }
