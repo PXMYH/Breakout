@@ -77,7 +77,7 @@ public class Breakout extends GraphicsProgram {
 		
 		for (int row_index = 0; row_index < NBRICKS_PER_ROW; row_index ++) {
 			// Extrapolate y location of brick
-			brick_y = BRICK_Y_OFFSET + index * (BRICK_HEIGHT + BRICK_SEP);
+			brick_y = BRICK_Y_OFFSET + row_index * (BRICK_HEIGHT + BRICK_SEP);
 			
 			for (int index_column = 0; index_column < NBRICKS_PER_ROW; index_column ++) {
 				// Extrapolate x location of brick
