@@ -75,31 +75,31 @@ public class Breakout extends GraphicsProgram {
 		// calculate the location of the first brick in each row
 		double brick_x_init = calcFirstBrickLoc();
 		
-		for (row_index = 0; row_index < NBRICKS_PER_ROW; row_index ++) {
-		for (int index = 0; index < NBRICKS_PER_ROW; index ++) {
-			// Extrapolate x location of brick
-			brick_x = brick_x_init + index * (BRICK_WIDTH + BRICK_SEP);
-			
-			// Extrapolate y location of brick
-			brick_y = BRICK_Y_OFFSET + index * (BRICK_HEIGHT + BRICK_SEP);
-			
-			// draw the bricks
-			switch (index) {
-			case 0: brick_color = Color.red;break;
-			case 1: brick_color = Color.red;break;
-			case 2: brick_color = Color.orange;break;
-			case 3: brick_color = Color.orange;break;
-			case 4: brick_color = Color.yellow;break;
-			case 5: brick_color = Color.yellow;break;
-			case 6: brick_color = Color.green;break;
-			case 7: brick_color = Color.green;break;
-			case 8: brick_color = Color.cyan;break;
-			case 9: brick_color = Color.cyan;break;
-			default: brick_color = Color.white;
+		for (int row_index = 0; row_index < NBRICKS_PER_ROW; row_index ++) {
+			for (int index_column = 0; index < NBRICKS_PER_ROW; index ++) {
+				// Extrapolate x location of brick
+				brick_x = brick_x_init + index * (BRICK_WIDTH + BRICK_SEP);
+				
+				// Extrapolate y location of brick
+				brick_y = BRICK_Y_OFFSET + index * (BRICK_HEIGHT + BRICK_SEP);
+				
+				// draw the bricks
+				switch (index) {
+				case 0: brick_color = Color.red;break;
+				case 1: brick_color = Color.red;break;
+				case 2: brick_color = Color.orange;break;
+				case 3: brick_color = Color.orange;break;
+				case 4: brick_color = Color.yellow;break;
+				case 5: brick_color = Color.yellow;break;
+				case 6: brick_color = Color.green;break;
+				case 7: brick_color = Color.green;break;
+				case 8: brick_color = Color.cyan;break;
+				case 9: brick_color = Color.cyan;break;
+				default: brick_color = Color.white;
+				}
+				drawBrick(brick_x, brick_y, brick_color);
 			}
-			drawBrick(brick_x, brick_y, brick_color);
 		}
-	}
 	}
 	
 	private double calcFirstBrickLoc () {
