@@ -58,6 +58,8 @@ public class Breakout extends GraphicsProgram {
 
 /** Number of turns */
 	private static final int NTURNS = 3;
+	
+	private GRect BRICK;
 
 /* Method: run() */
 /** Runs the Breakout program. */
@@ -81,7 +83,7 @@ public class Breakout extends GraphicsProgram {
 	}
 	
 	private void drawBricks () {
-		
+		BRICK = new GRect ();
 	}
 
 }
