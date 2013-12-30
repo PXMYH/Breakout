@@ -161,6 +161,7 @@ public class Breakout extends GraphicsProgram {
 		ball_x = (WIDTH - BALL_RADIUS * 2) / 2;
 		ball_y = (HEIGHT - BALL_RADIUS * 2) / 2;
 		ball = new GOval(ball_x, ball_y, BALL_RADIUS, BALL_RADIUS);
+		ball.setFillColor(Color.black)
 		add(ball);
 	}
 }
