@@ -83,6 +83,8 @@ public class Breakout extends GraphicsProgram {
 	public void run() {
 		// draw ball
 		drawBall();
+		
+		while (ball.getX() < WIDTH && ball.getY() < HEIGHT)
 	}
 	
 	// draw the game setup bricks
