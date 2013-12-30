@@ -71,7 +71,7 @@ public class Breakout extends GraphicsProgram {
 		// draw the paddle
 		drawPaddle();
 		
-		// add listner for mouse movement
+		// add listener for mouse movement
 		addMouseListeners();
 	}
 	
