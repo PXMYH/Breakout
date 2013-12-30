@@ -94,7 +94,7 @@ public class Breakout extends GraphicsProgram {
 			case 7: brick_color = Color.green;break;
 			case 8: brick_color = Color.cyan;break;
 			case 9: brick_color = Color.cyan;break;
-			default: brick_color = Color.white; break;
+			default: brick_color = Color.white;
 			}
 			drawBrick(brick_x, brick_y, brick_color);
 		}
