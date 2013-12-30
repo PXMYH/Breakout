@@ -80,7 +80,7 @@ public class Breakout extends GraphicsProgram {
 			brick_y = BRICK_Y_OFFSET + row_index * (BRICK_HEIGHT + BRICK_SEP);
 			
 			// determine the color of bricks in a row
-			switch (index) {
+			switch (row_index) {
 			case 0: brick_color = Color.red;break;
 			case 1: brick_color = Color.red;break;
 			case 2: brick_color = Color.orange;break;
