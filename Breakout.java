@@ -100,7 +100,6 @@ public class Breakout extends GraphicsProgram {
 				brick_x = brick_x_init + index_column * (BRICK_WIDTH + BRICK_SEP);
 				
 				// draw the bricks
-
 				drawBrick(brick_x, brick_y, brick_color);
 			}
 		}
