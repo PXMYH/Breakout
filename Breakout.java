@@ -71,6 +71,7 @@ public class Breakout extends GraphicsProgram {
 	private void drawGameBricks() {
 		
 		double brick_x, brick_y;
+		Color brick_color;
 		// calculate the location of the first brick in each row
 		double brick_x_init = calcFirstBrickLoc();
 		
@@ -82,7 +83,10 @@ public class Breakout extends GraphicsProgram {
 			brick_y = brick_y + index * (BRICK_HEIGHT + BRICK_SEP);
 			
 			// draw the bricks
-			drawBrick();
+			switch (index) {
+			case 0: brick_color = Color.red;
+			}
+			drawBrick(brick_x, brick_y, );
 		}
 	}
 	
