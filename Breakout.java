@@ -60,6 +60,7 @@ public class Breakout extends GraphicsProgram {
 	private GOval ball;
 
 	private double vx, vy;
+	private RandomGenerator rgen = RandomGenerator.getInstance();
 	
 	/* Method: init() */
 	/* Initialize the program */
