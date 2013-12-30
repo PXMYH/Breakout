@@ -58,6 +58,8 @@ public class Breakout extends GraphicsProgram {
 	private GRect brick;
 	private GRect paddle;
 	private GOval ball;
+	
+	private static final GAME_DELAY = 50;
 
 	private double vx, vy;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
