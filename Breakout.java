@@ -134,7 +134,8 @@ public class Breakout extends GraphicsProgram {
 	}
 
 	private void mouseMoved() {
-		// 
+		// draw paddle
+		drawPaddle();
 	}
 	
 	
