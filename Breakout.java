@@ -62,8 +62,12 @@ public class Breakout extends GraphicsProgram {
 /* Method: run() */
 /** Runs the Breakout program. */
 	public void run() {
-		// draw the game 
+		// draw the game initial setup
 		drawGameBricks();
+	}
+	
+	private void drawGameBricks() {
+		
 	}
 
 }
