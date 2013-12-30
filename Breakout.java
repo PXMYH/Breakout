@@ -85,7 +85,7 @@ public class Breakout extends GraphicsProgram {
 		drawBall();
 		
 		while (ball.getX() < WIDTH && ball.getY() < HEIGHT) {
-			
+			moveBall();
 		}
 	}
 	
