@@ -58,8 +58,7 @@ public class Breakout extends GraphicsProgram {
 	private GRect brick;
 	private GRect paddle;
 
-/* Method: run() */
-/** Runs the Breakout program. */
+
 	public void init() {
 		// draw the game initial setup
 		drawGameBricks();
@@ -74,6 +73,8 @@ public class Breakout extends GraphicsProgram {
 		addMouseListeners();
 	}
 	
+	/* Method: run() */
+	/** Runs the Breakout program. */
 	public void run() {
 		
 	}
