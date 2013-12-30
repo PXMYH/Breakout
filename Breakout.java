@@ -70,14 +70,17 @@ public class Breakout extends GraphicsProgram {
 	
 	private void drawGameBricks() {
 		
-		double brick_x;
+		double brick_x, brick_y;
 		// calculate the location of the first brick in each row
 		double brick_x_init = calcFirstBrickLoc();
 		
 		for (int index = 0; index < NBRICKS_PER_ROW; index ++) {
 			// Extrapolate x location of brick
 			brick_x = brick_x + index * (BRICK_WIDTH + BRICK_SEP);
+			
 			// Extrapolate y location of brick
+			br
+			
 			// draw the bricks
 			drawBrick();
 		}
