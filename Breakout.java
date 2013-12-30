@@ -157,7 +157,7 @@ public class Breakout extends GraphicsProgram {
 
 	public void mouseMoved(MouseEvent e) {
 		// clean up previous paddle trace
-		//remove(paddle);
+		remove(paddle);
 		
 		// draw paddle
 		if (e.getX() < WIDTH - PADDLE_WIDTH) {
