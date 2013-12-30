@@ -59,6 +59,8 @@ public class Breakout extends GraphicsProgram {
 	private GRect paddle;
 	private GOval ball;
 
+	private double vx, vy;
+	
 	/* Method: init() */
 	/* Initialize the program */
 	public void init() {
