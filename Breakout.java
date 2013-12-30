@@ -158,6 +158,6 @@ public class Breakout extends GraphicsProgram {
 	
 	private void drawBall() {
 		double ball_x, ball_y;
-		
+		ball = new GOval();
 	}
 }
