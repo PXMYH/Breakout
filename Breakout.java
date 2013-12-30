@@ -133,9 +133,9 @@ public class Breakout extends GraphicsProgram {
 		add (paddle);
 	}
 
-	private void mouseMoved(e) {
+	private void mouseMoved(MouseEvent e) {
 		// draw paddle
-		drawPaddle(e.getY);
+		drawPaddle(e.getX(), );
 	}
 	
 	
