@@ -155,5 +155,7 @@ public class Breakout extends GraphicsProgram {
 			drawPaddle(WIDTH- PADDLE_WIDTH - BRICK_SEP, HEIGHT - PADDLE_Y_OFFSET);
 	}
 	
-	private void 
+	private void drawBall() {
+		
+	}
 }
