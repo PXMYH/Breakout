@@ -130,7 +130,7 @@ public class Breakout extends GraphicsProgram {
 		// locate the initial location of paddle
 		
 		// draw the paddle
-		paddle = new GRect ();
+		paddle = new GRect (paddle_x, paddle_y, PADDLE_WIDTH, PADDLE_HEIGHT);
 	}
 	
 }
