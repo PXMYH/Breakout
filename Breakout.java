@@ -68,7 +68,7 @@ public class Breakout extends GraphicsProgram {
 		// locate the initial location of paddle
 		double paddle_x = (WIDTH - PADDLE_WIDTH)/ 2;
 		double paddle_y = HEIGHT - PADDLE_Y_OFFSET;		
-		drawPaddle();
+		drawPaddle(paddle_x, paddle_y);
 		
 		// add listener for mouse movement
 		addMouseListeners();
