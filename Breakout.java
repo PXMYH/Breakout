@@ -183,6 +183,10 @@ public class Breakout extends GraphicsProgram {
 		if(rgen.nextBoolean(0.5)) 
 			Vx = -Vx;
 		
+		// initialize Vy
+		Vy = 3.0;
+		
 		// bouncing wall
+		
 	}
 }
