@@ -234,8 +234,7 @@ public class Breakout extends GraphicsProgram {
 		
 	}
 
-	
-	
+	// retrieve the colliding object
 	private GObject getCollidingObject() {
 		// ball upper tip
 		if (getElementAt(ball.getX() + BALL_RADIUS, ball.getY()) == null) 	
