@@ -220,6 +220,7 @@ public class Breakout extends GraphicsProgram {
 	
 	// initialize ball position
 	private void ballSetup() {
+		
 		// draw ball
 		double ball_x, ball_y;
 		ball_x = (WIDTH - BALL_RADIUS * 2) / 2;
