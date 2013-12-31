@@ -178,7 +178,7 @@ public class Breakout extends GraphicsProgram {
 			//paddle.move(WIDTH - PADDLE_WIDTH - BRICK_SEP, HEIGHT - PADDLE_Y_OFFSET);
 	}
 	
-	private void drawBall() {
+	private void ballSetup() {
 		double ball_x, ball_y;
 		ball_x = (WIDTH - BALL_RADIUS * 2) / 2;
 		ball_y = (HEIGHT - BALL_RADIUS * 2) / 2;
@@ -193,6 +193,8 @@ public class Breakout extends GraphicsProgram {
 		if (ball.getY() < HEIGHT) {
 			// move ball
 			ball.move(Vx, Vy);
+		} else {
+			
 		}
 		
 		
