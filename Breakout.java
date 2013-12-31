@@ -191,7 +191,7 @@ public class Breakout extends GraphicsProgram {
 	private void moveBall() { 
 		Vy = Vy + Vy;
 		// move ball
-		ball.move(WIDTH/2, HEIGHT/2 + Vy);
+		ball.move(Vx, Vy);
 		
 		
 		// bouncing wall
