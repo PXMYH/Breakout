@@ -58,6 +58,7 @@ public class Breakout extends GraphicsProgram {
 	private GRect brick;
 	private GRect paddle;
 	private GOval ball;
+	private GObject collider;
 	
 	private static final int GAME_DELAY = 15;
 
