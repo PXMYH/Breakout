@@ -99,11 +99,13 @@ public class Breakout extends GraphicsProgram {
 			
 			// check if user wins the game
 			if (isGameWin()) {
+				// user wins the game
 				winGame();
 				break;
 			}
 			
 			if (num_turns <= 0) {
+				// terminate game
 				terminateGame();
 				break;
 			}
@@ -132,10 +134,7 @@ public class Breakout extends GraphicsProgram {
 			}
 			pause(GAME_DELAY);
 		}
-		
-		// terminate game
-		terminateGame();
-		
+
 	}
 	
 	// draw the game setup bricks
