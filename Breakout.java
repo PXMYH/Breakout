@@ -88,17 +88,8 @@ public class Breakout extends GraphicsProgram {
 	public void run() {
 		
 		// draw ball
-		ballSetup();
-		
-		// initialize Vx
-		Vx = rgen.nextDouble(1.0, 3.0);
-		if(rgen.nextBoolean(0.5)) 
-			Vx = -Vx;
-		
-		// initialize Vy
-		Vy = 3.0;		
-		
-		
+		ballSetup();	
+			
 		// play game
 		int num_turns = NTURNS;
 		while (ball.getX() < WIDTH && num_turns > 0) {
