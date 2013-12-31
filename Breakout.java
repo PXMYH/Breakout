@@ -234,7 +234,8 @@ public class Breakout extends GraphicsProgram {
 				else 
 					return getElementAt(ball.getX(), ball.getY() + BALL_RADIUS * 2);
 			else 
-				return getElementAt(ball.getX() + BALL_RADIUS * 2, ball.getY();
+				return getElementAt(ball.getX() + BALL_RADIUS * 2, ball.getY());
+				
 		return getElementAt(ball.getX(), ball.getY());
 	}
 }
