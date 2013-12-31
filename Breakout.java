@@ -178,6 +178,7 @@ public class Breakout extends GraphicsProgram {
 			//paddle.move(WIDTH - PADDLE_WIDTH - BRICK_SEP, HEIGHT - PADDLE_Y_OFFSET);
 	}
 	
+	// initialize ball position
 	private void ballSetup() {
 		double ball_x, ball_y;
 		ball_x = (WIDTH - BALL_RADIUS * 2) / 2;
