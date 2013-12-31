@@ -294,6 +294,8 @@ public class Breakout extends GraphicsProgram {
 	// Game Win method
 	private void winGame() {
 		win_label = new GLabel ("OF COURSE YOU WIN!", WIDTH / 6, HEIGHT / 3);
+		win_label.setColor(Color.red);
+		win_label.setFont("SanSerif-24");
 	}
 	
 }
