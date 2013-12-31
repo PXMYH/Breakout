@@ -286,7 +286,7 @@ public class Breakout extends GraphicsProgram {
 	}
 	
 	// check if user wins the game by knocking out all bricks
-	private boolean isWinGame() {
+	private boolean isGameWin() {
 		return total_number_of_bricks == 0 ? true : false;
 	}
 	
