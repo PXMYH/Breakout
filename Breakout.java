@@ -101,8 +101,7 @@ public class Breakout extends GraphicsProgram {
 			if (collider == paddle) {
 				Vy = -Vy;
 				ball.move(Vx, Vy);
-			}
-			else if (collider == brick) {
+			} else if (collider == brick) {
 				Vy = -Vy;
 				ball.move(Vx, Vy);
 			}
