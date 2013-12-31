@@ -101,7 +101,7 @@ public class Breakout extends GraphicsProgram {
 		
 		// play game
 		int num_turns = NTURNS;
-		while (ball.getX() < WIDTH && NTURNS > 0) {
+		while (ball.getX() < WIDTH && num_turns > 0) {
 			// check if ball touches the bottom wall, then user lose one turn
 			if (ball.getY() >= HEIGHT - BALL_RADIUS * 2)
 				num_turns --;
