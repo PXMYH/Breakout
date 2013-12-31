@@ -284,4 +284,10 @@ public class Breakout extends GraphicsProgram {
 		ball.setFillColor(Color.red);
 		ball.setFilled(true);
 	}
+	
+	// check if user wins the game by knocking out all bricks
+	private boolean isWinGame() {
+		return total_number_of_bricks == 0 ? true : false;
+	}
+	
 }
