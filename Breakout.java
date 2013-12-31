@@ -99,6 +99,8 @@ public class Breakout extends GraphicsProgram {
 			moveBall();
 			collider = getCollidingObject();
 			if (collider == paddle) {
+				Vy = -Vy;
+				ball.move(Vx, Vy)
 				ball.setLocation(WIDTH/4, HEIGHT/2);
 			}
 			else 
