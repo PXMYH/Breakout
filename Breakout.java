@@ -221,9 +221,9 @@ public class Breakout extends GraphicsProgram {
 	
 	
 	private GObject getCollidingObject() {
-		if (getElementAt(ball.getX() + BALL_RADIUS, ball.getY()) == null) 				// upper tip
+		if (getElementAt(ball.getX() + BALL_RADIUS, ball.getY()) == null) 				// ball upper tip
 			
-			if(getElementAt(ball.getX() + BALL_RADIUS * 2, ball.getY()) == null)		// right upper corner
+			if(getElementAt(ball.getX() + BALL_RADIUS , ball.getY()) == null)		// right upper corner
 				
 				if (getElementAt(ball.getX(), ball.getY() + BALL_RADIUS * 2) == null)	// left bottom corner
 					
