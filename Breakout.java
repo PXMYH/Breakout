@@ -258,6 +258,7 @@ public class Breakout extends GraphicsProgram {
 			// ball touches right/left wall, reverse horizontal speed
 			Vx = -Vx;
 			ball.move(Vx, Vy);
+			bounceClip.play();
 		} else {
 			// exception
 			ball.setColor(Color.red);
