@@ -103,8 +103,9 @@ public class Breakout extends GraphicsProgram {
 		int num_turns = NTURNS;
 		while (ball.getX() < WIDTH && num_turns > 0) {
 			// check if ball touches the bottom wall, then user lose one turn
-			if (ball.getY() >= HEIGHT - BALL_RADIUS * 2)
+			if (ball.getY() >= HEIGHT - BALL_RADIUS * 2) {
 				num_turns --;
+			}
 			
 			moveBall();
 			collider = getCollidingObject();
