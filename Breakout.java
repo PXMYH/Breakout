@@ -87,10 +87,10 @@ public class Breakout extends GraphicsProgram {
 		ballSetup();
 		
 		// initialize Vx
-//		Vx = rgen.nextDouble(1.0, 3.0);
-//		if(rgen.nextBoolean(0.5)) 
-//			Vx = -Vx;
-		Vx = 0.0;
+		Vx = rgen.nextDouble(1.0, 3.0);
+		if(rgen.nextBoolean(0.5)) 
+			Vx = -Vx;
+		//Vx = 0.0;
 		
 		// initialize Vy
 		Vy = 3.0;		
