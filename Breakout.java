@@ -234,7 +234,7 @@ public class Breakout extends GraphicsProgram {
 		if (getElementAt(ball.getX() + BALL_RADIUS, ball.getY()) == null) 	
 			
 			// ball bottom tip
-			if(getElementAt(ball.getX() + BALL_RADIUS, ball.getY() + BALL_RADIUS * 2) == null)		
+			if(getElementAt(ball.getX() + BALL_RADIUS, (ball.getY() + BALL_RADIUS * 2)) == null)		
 						return null;
 		
 			else 
