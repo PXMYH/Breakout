@@ -106,8 +106,6 @@ public class Breakout extends GraphicsProgram {
 			if (ball.getY() >= HEIGHT - BALL_RADIUS * 2) {
 				num_turns --;
 				remove (ball);
-				
-				// redraw ball
 				ballSetup();
 			}
 			
