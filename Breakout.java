@@ -276,8 +276,8 @@ public class Breakout extends GraphicsProgram {
 		// display 'GAME OVER' signal 
 		terminate_label = new GLabel ("@_@ GAME OVER @_@", WIDTH / 6, HEIGHT / 3);
 		terminate_label.setColor(Color.red);
-		terminate.setFont("SansSerif-24");
-		add (terminate);
+		terminate_label.setFont("SansSerif-24");
+		add (terminate_label);
 		
 		// move ball to origin location and change to red ball 
 		ball.setLocation(0, 0);
