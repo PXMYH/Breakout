@@ -195,8 +195,8 @@ public class Breakout extends GraphicsProgram {
 		if (ball.getY() < HEIGHT - BALL_RADIUS * 2 && ball.getY() > BALL_RADIUS * 2 && ball.getX() < WIDTH - BALL_RADIUS && ball.getX() > 0 ) { // ball in region
 			// move ball
 			ball.move(Vx, Vy);
-		} else if (ball.getY() <= BALL_RADIUS * 2 || ball.getY() >= HEIGHT - BALL_RADIUS * 2) { // ball touches upper/bottom wall
-			// bounce back
+		} else if (ball.getY() <= BALL_RADIUS * 2 || ball.getY() >= HEIGHT - BALL_RADIUS * 2) { 
+			// ball touches upper/bottom wall, reverse vertical speed
 			Vy = -Vy;
 			ball.move(Vx, Vy);
 			
