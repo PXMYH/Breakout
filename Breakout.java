@@ -104,6 +104,7 @@ public class Breakout extends GraphicsProgram {
 				break;
 			}
 			
+			// check if user has already used up all turns
 			if (num_turns <= 0) {
 				// terminate game
 				terminateGame();
