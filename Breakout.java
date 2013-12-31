@@ -210,6 +210,7 @@ public class Breakout extends GraphicsProgram {
 		add(ball);
 	}
 	
+	// ball movement while in game playing mode
 	private void moveBall() { 
 		
 		// bouncing wall
