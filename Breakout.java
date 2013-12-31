@@ -106,7 +106,6 @@ public class Breakout extends GraphicsProgram {
 				Vy = -Vy;
 				ball.move(Vx, Vy);
 			}
-				ball.setLocation(WIDTH/4, HEIGHT/3);
 			pause(GAME_DELAY);
 		}
 	}
