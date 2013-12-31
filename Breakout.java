@@ -97,6 +97,8 @@ public class Breakout extends GraphicsProgram {
 		// initialize Vy
 		Vy = 3.0;		
 		
+		
+		// play game
 		while (ball.getX() < WIDTH && ball.getY() < HEIGHT) {
 			moveBall();
 			collider = getCollidingObject();
@@ -114,6 +116,9 @@ public class Breakout extends GraphicsProgram {
 			}
 			pause(GAME_DELAY);
 		}
+		
+		// 
+		
 	}
 	
 	// draw the game setup bricks
