@@ -237,7 +237,6 @@ public class Breakout extends GraphicsProgram {
 		
 		// initialize Vy
 		Vy = 3.0;
-		
 	}
 	
 	// ball movement while in game playing mode
