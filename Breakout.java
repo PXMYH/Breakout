@@ -296,6 +296,7 @@ public class Breakout extends GraphicsProgram {
 		win_label = new GLabel ("OF COURSE YOU WIN!", WIDTH / 6, HEIGHT / 3);
 		win_label.setColor(Color.red);
 		win_label.setFont("SanSerif-24");
+		add(win_label);
 	}
 	
 }
