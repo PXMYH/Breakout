@@ -84,6 +84,20 @@ public class Breakout extends GraphicsProgram {
 	/* Method: run() */
 	/** Runs the Breakout program. */
 	public void run() {
+		// draw the game initial setup
+		drawGameBricks();
+		
+		// draw the paddle
+		// locate the initial location of paddle
+		double paddle_x = (WIDTH - PADDLE_WIDTH)/ 2;
+		double paddle_y = HEIGHT - PADDLE_Y_OFFSET;		
+		drawPaddle(paddle_x, paddle_y);
+		
+		// add listener for mouse movement
+		addMouseListeners();
+		
+		
+		
 		// draw ball
 		ballSetup();
 		
