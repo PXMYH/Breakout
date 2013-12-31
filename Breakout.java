@@ -60,6 +60,8 @@ public class Breakout extends GraphicsProgram {
 	private GOval ball;
 	
 	private static final int GAME_DELAY = 15;
+	
+	private GObject getCollidingObject();
 
 	private double Vx, Vy;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
