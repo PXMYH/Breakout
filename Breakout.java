@@ -101,7 +101,7 @@ public class Breakout extends GraphicsProgram {
 			if (collider == paddle) 
 				ball.setLocation(WIDTH/4, HEIGHT/2);
 			else 
-				ball.setLocation(WIDTH/2, y)
+				ball.setLocation(WIDTH/4, y)
 			pause(GAME_DELAY);
 		}
 	}
