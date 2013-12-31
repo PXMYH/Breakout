@@ -117,7 +117,7 @@ public class Breakout extends GraphicsProgram {
 			pause(GAME_DELAY);
 		}
 		
-		// 
+		// show result
 		
 	}
 	
