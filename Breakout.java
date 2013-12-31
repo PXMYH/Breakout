@@ -84,6 +84,9 @@ public class Breakout extends GraphicsProgram {
 		
 		// add listener for mouse movement
 		addMouseListeners();
+		
+		// load bouncing audio
+		AudioClip bounceClip = MediaTools.loadAudioClip("bounce.au");
 	}
 	
 	/* Method: run() */
