@@ -191,6 +191,7 @@ public class Breakout extends GraphicsProgram {
 	private void drawPaddle(double x, double y) {
 		// draw the paddle
 		//paddle = new GRect (x, y, PADDLE_WIDTH, PADDLE_HEIGHT);
+		paddle = new GRect (x, y, WIDTH, PADDLE_HEIGHT);
 		paddle.setFilled(true);
 		paddle.setFillColor(Color.black);
 		add (paddle);
