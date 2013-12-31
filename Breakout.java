@@ -66,7 +66,7 @@ public class Breakout extends GraphicsProgram {
 	private AudioClip winningClip;
 	
 /** time delay to update ball movement*/	
-	private static final int GAME_DELAY = 1;
+	private static final int GAME_DELAY = 10;
 	
 	private static int total_number_of_bricks = NBRICKS_PER_ROW * NBRICK_ROWS;
 
