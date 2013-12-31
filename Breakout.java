@@ -90,7 +90,7 @@ public class Breakout extends GraphicsProgram {
 		
 		// load bouncing audio
 		bounceClip = MediaTools.loadAudioClip("bounce.au");
-		winningClip = MediaTools.loadAudioClip("WinningCheer.au");
+		winningClip = MediaTools.loadAudioClip("winningcheer.au");
 	}
 	
 	/* Method: run() */
