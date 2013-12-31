@@ -60,8 +60,6 @@ public class Breakout extends GraphicsProgram {
 	private GOval ball;
 	
 	private static final int GAME_DELAY = 15;
-	
-	private GObject getCollidingObject();
 
 	private double Vx, Vy;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
@@ -209,6 +207,10 @@ public class Breakout extends GraphicsProgram {
 		} else {
 			ball.setLocation(WIDTH/3, HEIGHT - BALL_RADIUS * 2);
 		}
+		
+	}
+
+	private GObject getCollidingObject() {
 		
 	}
 }
