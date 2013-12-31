@@ -59,7 +59,8 @@ public class Breakout extends GraphicsProgram {
 	private GRect paddle;
 	private GOval ball;
 	private GObject collider;
-	private GLabel terminate;
+	private GLabel terminate_label;
+	private GLabel win_label;
 	
 /** time delay to update ball movement*/	
 	private static final int GAME_DELAY = 30;
@@ -288,6 +289,11 @@ public class Breakout extends GraphicsProgram {
 	// check if user wins the game by knocking out all bricks
 	private boolean isGameWin() {
 		return total_number_of_bricks == 0 ? true : false;
+	}
+	
+	// Game Win method
+	private void winGame() {
+		
 	}
 	
 }
