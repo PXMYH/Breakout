@@ -63,6 +63,8 @@ public class Breakout extends GraphicsProgram {
 	
 /** time delay to update ball movement*/	
 	private static final int GAME_DELAY = 30;
+	
+	private static int total_number_of_bricks = NBRICKS_PER_ROW * NBRICK_ROWS;
 
 	private double Vx, Vy;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
