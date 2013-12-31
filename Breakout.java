@@ -253,10 +253,13 @@ public class Breakout extends GraphicsProgram {
 	}
 	
 	private void terminateGame(){
+		// display 'GAME OVER' signal 
 		terminate = new GLabel ("@_@ GAME OVER @_@", WIDTH / 6, HEIGHT / 3);
 		terminate.setColor(Color.red);
 		terminate.setFont("SansSerif-24");
 		add (terminate);
+		
+		// move ball to origin location
 		ball.setLocation(0, 0);
 		ball.setColor(Color.red);
 		ball.setFillColor(Color.red);
