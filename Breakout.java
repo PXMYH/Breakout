@@ -224,14 +224,14 @@ public class Breakout extends GraphicsProgram {
 	private void moveBall() { 
 		
 		// bouncing wall
-		if (ball.getY() < HEIGHT - BALL_RADIUS * 2 && ball.getY() > BALL_RADIUS * 2 && ball.getX() < WIDTH - BALL_RADIUS * 2 && ball.getX() >= 0 ) { // ball in region
+		if (ball.getY() < HEIGHT - BALL_RADIUS * 2 && ball.getY() > BALL_RADIUS * 2 && ball.getX() <= WIDTH - BALL_RADIUS * 2 && ball.getX() >= 0 ) { // ball in region
 			// move ball
 			ball.move(Vx, Vy);
 		} else if (ball.getY() <= BALL_RADIUS * 2 || ball.getY() >= HEIGHT - BALL_RADIUS * 2) { 
 			// ball touches upper/bottom wall, reverse vertical speed
 			Vy = -Vy;
 			ball.move(Vx, Vy);
-		} else if (ball.getX() >= WIDTH - BALL_RADIUS * 2 || ball.getX() < 0) {
+		} else if (ball.getX() > WIDTH - BALL_RADIUS * 2 || ball.getX() < 0) {
 			// ball touches right/left wall, reverse horizontal speed
 			Vx = -Vx;
 			ball.move(Vx, Vy);
