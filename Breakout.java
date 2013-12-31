@@ -61,7 +61,7 @@ public class Breakout extends GraphicsProgram {
 	private GObject collider;
 	
 /** time delay to update ball movement*/	
-	private static final int GAME_DELAY = 10;
+	private static final int GAME_DELAY = 40;
 
 	private double Vx, Vy;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
