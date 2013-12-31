@@ -256,5 +256,6 @@ public class Breakout extends GraphicsProgram {
 		terminate = new GLabel ("@_@ GAME OVER @_@", WIDTH / 2, HEIGHT / 3);
 		terminate.setColor(Color.red);
 		terminate.setFont("SansSerif-36");
+		add (terminate);
 	}
 }
