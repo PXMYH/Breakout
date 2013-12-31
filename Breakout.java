@@ -103,6 +103,7 @@ public class Breakout extends GraphicsProgram {
 				Vy = -Vy;
 				ball.move(Vx, Vy);
 			} else if (collider == null){
+				// collider object is null, do nothing
 			} else {
 				Vy = -Vy;
 				ball.move(Vx, Vy);
