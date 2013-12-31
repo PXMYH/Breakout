@@ -198,9 +198,9 @@ public class Breakout extends GraphicsProgram {
 		} else if (ball.getY() < BALL_RADIUS * 2 || ball.getY() > HEIGHT - BALL_RADIUS * 2) {
 			Vy = -Vy;
 			ball.move(Vx, Vy);
-			//ball.setLocation(WIDTH/2, HEIGHT - BALL_RADIUS * 2);
+			
 		} else {
-			ball.move(dx, dy)
+			ball.setLocation(WIDTH/2, HEIGHT - BALL_RADIUS * 2);
 		}
 		
 		
