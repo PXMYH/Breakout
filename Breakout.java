@@ -100,7 +100,7 @@ public class Breakout extends GraphicsProgram {
 		
 		
 		// play game
-		while (ball.getX() < WIDTH && ball.getY() < HEIGHT) {
+		while (ball.getX() < WIDTH && ball.getY() < HEIGHT - RADIUS * 2) {
 			moveBall();
 			collider = getCollidingObject();
 			if (collider == paddle) {
