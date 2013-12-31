@@ -90,6 +90,7 @@ public class Breakout extends GraphicsProgram {
 		
 		// load bouncing audio
 		bounceClip = MediaTools.loadAudioClip("bounce.au");
+		winningClip = MediaTools.loadAudioClip("WinningCheer.mp3");
 	}
 	
 	/* Method: run() */
@@ -313,6 +314,7 @@ public class Breakout extends GraphicsProgram {
 		add(win_label);
 		
 		// play the winning music
+		winningClip.
 		winningClip.play();
 	}
 	
