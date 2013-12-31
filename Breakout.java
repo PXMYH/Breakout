@@ -314,7 +314,6 @@ public class Breakout extends GraphicsProgram {
 		add(win_label);
 		
 		// play the winning music
-		winningClip.
 		winningClip.play();
 	}
 	
