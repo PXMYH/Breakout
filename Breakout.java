@@ -209,8 +209,5 @@ public class Breakout extends GraphicsProgram {
 			ball.setLocation(WIDTH/3, HEIGHT - BALL_RADIUS * 2);
 		}
 		
-		
-		// bouncing wall
-		
 	}
 }
