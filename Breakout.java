@@ -84,7 +84,7 @@ public class Breakout extends GraphicsProgram {
 	/** Runs the Breakout program. */
 	public void run() {
 		// draw ball
-		drawBall();
+		ballSetup();
 		
 		// initialize Vx
 //		Vx = rgen.nextDouble(1.0, 3.0);
