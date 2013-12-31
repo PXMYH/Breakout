@@ -220,6 +220,7 @@ public class Breakout extends GraphicsProgram {
 	
 	// initialize ball position
 	private void ballSetup() {
+		// draw ball
 		double ball_x, ball_y;
 		ball_x = (WIDTH - BALL_RADIUS * 2) / 2;
 		ball_y = (HEIGHT - BALL_RADIUS * 2) / 2;
@@ -227,6 +228,15 @@ public class Breakout extends GraphicsProgram {
 		ball.setFilled(true);
 		ball.setFillColor(Color.black);
 		add(ball);
+		
+		// initialize Vx
+		Vx = rgen.nextDouble(1.0, 3.0);
+		if(rgen.nextBoolean(0.5)) 
+			Vx = -Vx;
+		
+		// initialize Vy
+		Vy = 3.0;
+		
 	}
 	
 	// ball movement while in game playing mode
