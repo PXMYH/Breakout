@@ -107,6 +107,7 @@ public class Breakout extends GraphicsProgram {
 				// collider object is null, do nothing
 			} else {
 				// collider is brick, bounce back and remove the brick
+				remove (collider);
 				Vy = -Vy;
 				ball.move(Vx, Vy);
 			}
