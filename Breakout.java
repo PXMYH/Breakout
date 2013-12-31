@@ -259,7 +259,7 @@ public class Breakout extends GraphicsProgram {
 		terminate.setFont("SansSerif-24");
 		add (terminate);
 		
-		// move ball to origin location
+		// move ball to origin location and change to red ball 
 		ball.setLocation(0, 0);
 		ball.setColor(Color.red);
 		ball.setFillColor(Color.red);
