@@ -253,6 +253,6 @@ public class Breakout extends GraphicsProgram {
 	}
 	
 	private void terminateGame(){
-		
+		terminate = new GLabel ();
 	}
 }
