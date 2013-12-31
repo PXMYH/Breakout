@@ -62,6 +62,8 @@ public class Breakout extends GraphicsProgram {
 	private GLabel terminate_label;
 	private GLabel win_label;
 	
+	private AudioClip bounceClip;
+	
 /** time delay to update ball movement*/	
 	private static final int GAME_DELAY = 1;
 	
