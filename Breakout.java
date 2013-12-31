@@ -100,6 +100,7 @@ public class Breakout extends GraphicsProgram {
 			moveBall();
 			collider = getCollidingObject();
 			if (collider == paddle) {
+				// collider is paddle, bounce back
 				Vy = -Vy;
 				ball.move(Vx, Vy);
 			} else if (collider == null){
