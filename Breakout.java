@@ -221,14 +221,17 @@ public class Breakout extends GraphicsProgram {
 	
 	
 	private GObject getCollidingObject() {
-		if (getElementAt(ball.getX() + BALL_RADIUS, ball.getY()) == null) 				// ball upper tip
+		// ball upper tip
+		if (getElementAt(ball.getX() + BALL_RADIUS, ball.getY()) == null) 	
 			
-			if(getElementAt(ball.getX() + BALL_RADIUS, ball.getY() + BALL_RADIUS * 2) == null)		// ball bottom tip
+			// ball bottom tip
+			if(getElementAt(ball.getX() + BALL_RADIUS, ball.getY() + BALL_RADIUS * 2) == null)		
 				
 						return null;
 		
 			else 
 				return getElementAt(ball.getX() + BALL_RADIUS, ball.getY() + BALL_RADIUS * 2);
+		
 		else 
 			return getElementAt(ball.getX(), ball.getY());
 	}
