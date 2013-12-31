@@ -100,7 +100,7 @@ public class Breakout extends GraphicsProgram {
 		
 		
 		// play game
-		while (ball.getX() < WIDTH &&  && NTURNS > 0) {
+		while (ball.getX() < WIDTH && NTURNS > 0) {
 			if (ball.getY() >= HEIGHT - BALL_RADIUS * 2)
 				NTURNS --;
 			
