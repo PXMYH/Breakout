@@ -109,14 +109,6 @@ public class Breakout extends GraphicsProgram {
 				
 				// redraw ball
 				ballSetup();
-				
-				// initialize Vx
-				Vx = rgen.nextDouble(1.0, 3.0);
-				if(rgen.nextBoolean(0.5)) 
-					Vx = -Vx;
-				
-				// initialize Vy
-				Vy = 3.0;	
 			}
 			
 			moveBall();
