@@ -311,6 +311,9 @@ public class Breakout extends GraphicsProgram {
 		win_label.setColor(Color.red);
 		win_label.setFont("SanSerif-24");
 		add(win_label);
+		
+		// play the winning music
+		winningClip.play();
 	}
 	
 }
