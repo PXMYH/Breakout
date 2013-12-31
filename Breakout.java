@@ -257,5 +257,6 @@ public class Breakout extends GraphicsProgram {
 		terminate.setColor(Color.red);
 		terminate.setFont("SansSerif-24");
 		add (terminate);
+		ball.setLocation(0, 0);
 	}
 }
