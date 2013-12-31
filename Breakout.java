@@ -165,6 +165,7 @@ public class Breakout extends GraphicsProgram {
 		add (paddle);
 	}
 
+	// define paddle operation when mouse moved
 	public void mouseMoved(MouseEvent e) {
 		// clean up previous paddle trace
 		remove(paddle);
