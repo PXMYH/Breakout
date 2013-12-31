@@ -103,6 +103,9 @@ public class Breakout extends GraphicsProgram {
 				break;
 			}
 			
+			if (num_turns <= 0)
+				terminaeGame();
+			
 			// check if ball touches the bottom wall, then user lose one turn
 			if (ball.getY() >= HEIGHT - BALL_RADIUS * 2) {
 				num_turns --;
