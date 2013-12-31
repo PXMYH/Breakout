@@ -274,8 +274,8 @@ public class Breakout extends GraphicsProgram {
 	
 	private void terminateGame(){
 		// display 'GAME OVER' signal 
-		terminate = new GLabel ("@_@ GAME OVER @_@", WIDTH / 6, HEIGHT / 3);
-		terminate.setColor(Color.red);
+		terminate_label = new GLabel ("@_@ GAME OVER @_@", WIDTH / 6, HEIGHT / 3);
+		terminate_label.setColor(Color.red);
 		terminate.setFont("SansSerif-24");
 		add (terminate);
 		
