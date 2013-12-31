@@ -60,6 +60,7 @@ public class Breakout extends GraphicsProgram {
 	private GOval ball;
 	private GObject collider;
 	
+/** time delay to update ball movement*/	
 	private static final int GAME_DELAY = 10;
 
 	private double Vx, Vy;
