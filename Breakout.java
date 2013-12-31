@@ -95,7 +95,7 @@ public class Breakout extends GraphicsProgram {
 			
 		// play game
 		int num_turns = NTURNS;
-		while (ball.getX() < WIDTH && num_turns > 0) {
+		while (ball.getX() < WIDTH) {
 			
 			// check if user wins the game
 			if (isGameWin()) {
