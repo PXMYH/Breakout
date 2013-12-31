@@ -189,8 +189,11 @@ public class Breakout extends GraphicsProgram {
 	}
 	
 	private void moveBall() { 
+		
+		if (ball.getY() < HEIGHT) {
 		// move ball
 		ball.move(Vx, Vy);
+		}
 		
 		
 		// bouncing wall
