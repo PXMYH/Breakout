@@ -212,6 +212,9 @@ public class Breakout extends GraphicsProgram {
 			Vx = -Vx;
 			ball.move(Vx, Vy);
 		} else {
+			ball.setColor(Color.red);
+			ball.setFillColor(Color.red);
+			ball.setFilled(true);
 			ball.setLocation(WIDTH/3, HEIGHT - BALL_RADIUS * 2);
 		}
 		
