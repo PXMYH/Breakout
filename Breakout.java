@@ -200,7 +200,7 @@ public class Breakout extends GraphicsProgram {
 			ball.move(Vx, Vy);
 			
 		} else {
-			ball.setLocation(WIDTH/2, HEIGHT - BALL_RADIUS * 2);
+			ball.setLocation(WIDTH/3, HEIGHT - BALL_RADIUS * 2);
 		}
 		
 		
