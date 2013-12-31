@@ -250,4 +250,8 @@ public class Breakout extends GraphicsProgram {
 		else 
 			return getElementAt(ball.getX() + BALL_RADIUS, ball.getY());
 	}
+	
+	private void terminateGame(){
+		
+	}
 }
